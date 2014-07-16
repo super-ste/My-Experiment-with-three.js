@@ -1,4 +1,4 @@
-three.js
+Experiments with GitHub and three.js
 ========
 
 This is my first test with GitHub and three.js
