@@ -1,202 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>three.js - JavaScript 3D library</title>
-		<style>
-			@font-face {
-				font-family: 'inconsolata';
-				src: url('files/inconsolata.woff') format('woff');
-				font-weight: normal;
-				font-style: normal;
-			}
+<html>
 
-			body {
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="super-ste.github.io : This is my first test with GitHub and three.js" />
 
-				background-color: #ffffff;
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-				margin: 0px;
+    <title>super-ste.github.io</title>
+  </head>
 
-				font-family: 'inconsolata';
-				font-size: 15px;
+  <body>
 
-			}
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/super-ste/three.js">View on GitHub</a>
 
-			h1 {
-				color: #444;
-				font-size: 25px;
-				font-weight: normal;
+          <h1 id="project_title">super-ste.github.io</h1>
+          <h2 id="project_tagline">This is my first test with GitHub and three.js</h2>
 
-				margin-top: 5px;
-				margin-bottom: 20px;
-			}
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/super-ste/three.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/super-ste/three.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-			h2 {
-				color: #999;
-				font-size: 18px;
-				font-weight: normal;
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-				margin-top: 5px;
-				margin-bottom: 20px;
-			}
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-			hr {
-				border: 0px;
-				height: 1px;
-				background-color: #ccc;
-				margin: 30px 0px;
-			}
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-			a {
-				color: #2194CE;
-				font-size: 15px;
-				text-decoration: none;
-			}
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-			a:hover {
-				text-decoration: underline;
-			}
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-			#panel	{
-				position: fixed;
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-				left: 0px;
-				top: 0px;
-				bottom: 0px;
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-				width: 140px;
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-				padding: 20px 20px 0 20px;
-			}
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-			#content {
-				position: absolute;
-				left: 180px;
-				top: 0px;
-				padding: 28px 0 0 0;
-			}
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-				#content .project {
-					width: 200px;
-					height: 150px;
-					display: block;
-					float: left;
-					transition: opacity 0.2s;
-				}
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
 
-				#content .project:hover {
-					opacity: 0.75;
-				}
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">super-ste.github.io maintained by <a href="https://github.com/super-ste">super-ste</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-		</style>
-	</head>
-	<body>
+    
 
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-86951-15']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
-
-		<div id="panel">
-			<h1>three.js<span style="font-size: 50%; vertical-align: super;"> <a href="http://github.com/mrdoob/three.js/releases">r68</a></span></h1>
-
-			<a href="examples/">examples</a>,
-			<a href="http://stemkoski.github.io/Three.js/">more</a><br /><br />
-
-			<a href="http://github.com/mrdoob/three.js/zipball/master">download</a>,
-			<a href="http://cdnjs.com/libraries/three.js/">cdn</a><br /><br />
-
-			<a href="docs/index.html#Manual/Introduction/Creating_a_scene">getting started</a><br />
-			<a href="docs/">documentation</a><br />
-			<a href="https://plus.google.com/104300307601542851567" rel="publisher">google+</a><br />
-			<a href="http://webchat.freenode.net/?channels=three.js">chat</a><br />
-			<a href="http://stackoverflow.com/questions/tagged/three.js">help</a><br /><br />
-
-			<a href="http://github.com/mrdoob/three.js/">github</a><br />
-			<a href="http://github.com/mrdoob/three.js/contributors">contributors</a><br />
-			<a href="http://github.com/mrdoob/three.js/wiki">wiki</a><br />
-			<a href="http://github.com/mrdoob/three.js/issues">issues</a><br /><br />
-
-			<a href="editor/">editor</a> (beta)
-
-			<hr />
-
-			<center>
-			<a href="http://www.udacity.com/overview/Course/cs291/" target="_blank"><img src="files/udacity.png" width="121" height="152" style="border:1px solid #ccc" /></a><br /><br />
-
-			<a href="http://shop.oreilly.com/product/0636920024729.do" target="_blank"><img src="files/webglbook.png" width="100" height="132" style="border:1px solid #ccc" /></a>
-			</center>
-
-		</div>
-
-		<div id="content">
-
-			<h2>featured projects</h2>
-
-			<a href="http://www.google.com/doodles/rubiks-cube" target="_blank"><img src="files/projects/rubiks-cube.jpg" class="project"></a>
-			<a href="http://www.georgeandjonathan.com/" target="_blank"><img src="files/projects/georgeandjonathan.jpg" class="project"></a>
-			<a href="http://www.nike.com/xp/b/genealogyofthefree/zoetrope.html" target="_blank"><img src="files/projects/genealogyofthefree.jpg" class="project"></a>
-			<a href="http://i-remember.fr/en" target="_blank"><img src="files/projects/iremember.png" class="project"></a>
-			<a href="http://ogreen.special-t.com/en/" target="_blank"><img src="files/projects/ogreen.jpg" class="project"></a>
-			<a href="http://verold.com/" target="_blank"><img src="files/projects/verold.png" class="project"></a>
-			<a href="http://carvisualizer.plus360degrees.com/classics/" target="_blank"><img src="files/projects/classics.png" class="project"></a>
-			<a href="http://helloracer.com/racer-s/" target="_blank"><img src="files/projects/racer-s.jpg" class="project"></a>
-			<a href="http://christmasexperiments.com/" target="_blank"><img src="files/projects/christmasexperiments.jpg" class="project"></a>
-			<a href="http://middle-earth.thehobbit.com/" target="_blank"><img src="files/projects/thehobbit.jpg" class="project"></a>
-			<a href="http://asmallgame.com/kiddisco/" target="_blank"><img src="files/projects/kiddisco.jpg" class="project"></a>
-			<a href="http://gravitymovie.warnerbros.com/" target="_blank"><img src="files/projects/gravity.jpg" class="project"></a>
-			<a href="https://www.justareflektor.com/" target="_blank"><img src="files/projects/reflektor.jpg" class="project"></a>
-			<a href="http://clara.io/" target="_blank"><img src="files/projects/clara.png" class="project"></a>
-			<a href="http://hellorun.helloenjoy.com" target="_blank"><img src="files/projects/hellorun.jpg" class="project"></a>
-			<a href="http://acko.net/" target="_blank"><img src="files/projects/acko.jpg" class="project"></a>
-			<a href="http://cubeslam.com/" target="_blank"><img src="files/projects/cubeslam.jpg" class="project"></a>
-			<a href="http://hyperlapse.tllabs.io/" target="_blank"><img src="files/projects/hyperlapse.jpg" class="project"></a>
-			<a href="http://chrome.com/maze/" target="_blank"><img src="files/projects/wwmaze.jpg" class="project"></a>
-			<a href="http://antivj.com/paleodictyon_app/" target="_blank"><img src="files/projects/paleodictyon.jpg" class="project"></a>
-			<a href="http://www.findyourwaytooz.com/" target="_blank"><img src="files/projects/findyourwaytooz.jpg" class="project"></a>
-			<a href="http://voxeljs.com/" target="_blank"><img src="files/projects/voxeljs.jpg" class="project"></a>
-			<a href="http://christmasexperiments.com/2012/23/" target="_blank"><img src="files/projects/neverseenthesky.jpg" class="project"></a>
-			<a href="http://www.google.com/zeitgeist/2012/#explore" target="_blank"><img src="files/projects/zeitgeist2012.jpg" class="project"></a>
-			<a href="http://lab.sehsucht.de/" target="_blank"><img src="files/projects/zoetrope.jpg" class="project"></a>
-			<a href="http://www.pillandpillow.com/mvsw/site/" target="_blank"><img src="files/projects/mvsw.jpg" class="project"></a>
-			<a href="http://thecarpandtheseagull.thecreatorsproject.com/" target="_blank"><img src="files/projects/thecarpandtheseagull.jpg" class="project"></a>
-			<a href="http://workshop.chromeexperiments.com/stars/" target="_blank"><img src="files/projects/100000stars.jpg" class="project"></a>
-			<a href="http://theywilleatyou.com/" target="_blank"><img src="files/projects/theywilleatyou.jpg" class="project"></a>
-			<a href="http://blast.hellohikimori.com/" target="_blank"><img src="files/projects/blast.jpg" class="project"></a>
-			<a href="http://hexgl.bkcore.com/" target="_blank"><img src="files/projects/hexgl.jpg" class="project"></a>
-			<a href="http://workshop.chromeexperiments.com/projects/armsglobe/" target="_blank"><img src="files/projects/armsglobe.jpg" class="project"></a>
-			<a href="http://carvisualizer.plus360degrees.com/threejs/" target="_blank"><img src="files/projects/carvisualizer.jpg" class="project"></a>
-			<a href="http://www.chromeweblab.com/" target="_blank"><img src="files/projects/chromeweblab.jpg" class="project"></a>
-			<a href="http://lightgraffiti.littlesun.com/" target="_blank"><img src="files/projects/lightgraffiti.jpg" class="project"></a>
-			<a href="http://www.pajamaclubmusic.com/3d/" target="_blank"><img src="files/projects/tntfortwo.jpg" class="project"></a>
-			<a href="http://www.chaostoperfection.com/" target="_blank"><img src="files/projects/chaostoperfection.jpg" class="project"></a>
-			<a href="http://www.sketchpatch.net/labs/livecodelabIntro.html" target="_blank"><img src="files/projects/livecodelab.jpg" class="project"></a>
-			<a href="http://collinhover.github.com/kaiopua/" target="_blank"><img src="files/projects/kaiopua.jpg" class="project"></a>
-			<a href="http://chandlerprall.github.com/Physijs/" target="_blank"><img src="files/projects/physijs.jpg" class="project"></a>
-			<a href="http://www.playmapscube.com/" target="_blank"><img src="files/projects/googlecube.jpg" class="project"></a>
-			<a href="http://triggerrally.com/" target="_blank"><img src="files/projects/triggerrally.jpg" class="project"></a>
-			<!-- <a href="http://yagiz.me/zombiesvscow/" target="_blank"><img src="files/projects/zombiesvscow.jpg" class="project"></a> -->
-			<a href="http://blackjk3.github.com/threefab/" target="_blank"><img src="files/projects/threefab.jpg" class="project"></a>
-			<a href="http://dl.dropbox.com/u/6213850/WebGL/nyanCat/nyan.html" target="_blank"><img src="files/projects/nyancat.jpg" class="project"></a>
-			<a href="http://idflood.github.com/ThreeNodes.js/public/index.html" target="_blank"><img src="files/projects/threenodes.jpg" class="project"></a>
-			<!-- <a href="http://www.adidas.com/football/uk/pages/f50/" target="_blank"><img src="files/projects/f50.jpg" class="project"></a> -->
-			<a href="http://lights.elliegoulding.com/" target="_blank"><img src="files/projects/lights.jpg" class="project"></a>
-			<a href="http://inear.se/beanstalk/" target="_blank"><img src="files/projects/beanstalk.jpg" class="project"></a>
-			<!-- <a href="http://superfad.com/missioncontrol/" target="_blank"><img src="files/projects/missioncontrol.jpg" class="project"></a> -->
-			<a href="http://ro.me/" target="_blank"><img src="files/projects/rome.jpg" class="project"></a>
-			<a href="http://data-arts.appspot.com/globe" target="_blank"><img src="files/projects/globe.jpg" class="project"></a>
-			<a href="http://helloracer.com/webgl/" target="_blank"><img src="files/projects/helloracer.jpg" class="project"></a>
-
-		</div>
-
-	</body>
+  </body>
 </html>
